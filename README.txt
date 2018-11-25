@@ -1,7 +1,5 @@
-Useful frameworks for iOS Development:
+Useful swift extensions I have been using in my iOS projects.
+Hope it helps other iOS Developers out there.
 
-- SwiftyBeaver
-- Crashlytics
-- Alamofire
-- AFNetworking
-- SVProgressHUD
+Cheers.
+
