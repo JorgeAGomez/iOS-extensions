@@ -15,7 +15,7 @@ extension NSAttributedString {
     // Recognize HTML tags in a text and apply the tags to the label selected.
     internal convenience init?(html: String) {
       //font-size: 14
-      let htmlWithFont = "<span style=\"font-family: Titillium Web; \">\(html)</span>"
+      let htmlWithFont = "<span style=\"font-family: OpenSans; \">\(html)</span>"
       guard let data = htmlWithFont.data(using: String.Encoding.utf16, allowLossyConversion: false) else { return nil }
 
       guard let attributedString = try? NSMutableAttributedString(data: data, options: [NSAttributedString.DocumentReadingOptionKey.documentType: NSAttributedString.DocumentType.html], documentAttributes: nil) else {

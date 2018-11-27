@@ -25,4 +25,10 @@ extension UIApplication {
         }
         return base
     }
+  
+    var statusBarView: UIView? {
+        return value(forKey: "statusBar") as? UIView
+    }
 }
+
+

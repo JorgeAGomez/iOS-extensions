@@ -12,6 +12,7 @@
 */
 
 import Foundation
+import UIKit
 
 extension UIImage {
     public static func getWindowImage() -> UIImage? {
@@ -22,5 +23,13 @@ extension UIImage {
             return image
         }
         return nil
+    }
+  
+    convenience init(view: UIView) {
+        UIGraphicsBeginImageContext(view.frame.size)
+        view.layer.render(in:UIGraphicsGetCurrentContext()!)
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        self.init(cgImage: image!.cgImage!)
     }
 }

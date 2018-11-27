@@ -13,21 +13,21 @@ extension NSMutableAttributedString {
         append(NSAttributedString(string: "\n"))
     }
     
-    public func centerAlignWithSpacing(_ lineSpacing: CGFloat) {
-        let paragraphStyle = NSMutableParagraphStyle()
-        paragraphStyle.alignment = .center
-        paragraphStyle.lineSpacing = lineSpacing
-        setParagraphStyle(paragraphStyle: paragraphStyle)
-    }
-    
-    public func setLineSpacing(_ lineSpacing: CGFloat) {
-        let paragraphStyle = NSMutableParagraphStyle()
-        paragraphStyle.lineSpacing = lineSpacing
-        setParagraphStyle(paragraphStyle: paragraphStyle)
-    }
-    
-    func setParagraphStyle(paragraphStyle: NSParagraphStyle) {
-        let range = NSMakeRange(0, string.count)
-        addAttribute(NSAttributedStringKey.paragraphStyle, value: paragraphStyle, range: range)
-    }
+//  public func centerAlignWithSpacing(_ lineSpacing: CGFloatCGFloat) {
+//        let paragraphStyle = NSMutableParagraphStyle()
+//        paragraphStyle.alignment = .center
+//        paragraphStyle.lineSpacing = lineSpacing
+//        setParagraphStyle(paragraphStyle: paragraphStyle)
+//    }
+//    
+//  public func setLineSpacing(_ lineSpacing: CGFloat) {
+//        let paragraphStyle = NSMutableParagraphStyle()
+//        paragraphStyle.lineSpacing = lineSpacing
+//        setParagraphStyle(paragraphStyle: paragraphStyle)
+//    }
+//    
+//    func setParagraphStyle(paragraphStyle: NSParagraphStyle) {
+//        let range = NSMakeRange(0, string.count)
+//        addAttribute(NSAttributedStringKey.paragraphStyle, value: paragraphStyle, range: range)
+//    }
 }
